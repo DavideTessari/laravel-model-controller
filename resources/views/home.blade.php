@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
+    <div class="container text-center p-5">
         <h1> Hello 🤗🤗 Do you wanna see a movie?</h1>
 
-        <div class="row row-cols-3">
+        <div class="row justify-content-between m-3">
             @foreach ($movies as $movie)
-            <div class="card" style="width: 18rem;">
+            <div class="card my-3" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">Card title: {{ $movie->title }}</h5>
                   <h6 class="card-subtitle mb-2 text-body-secondary">Original title: {{ $movie->original_title }}</h6>

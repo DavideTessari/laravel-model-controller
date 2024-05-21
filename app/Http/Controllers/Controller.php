@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\lers;
+namespace App\Http\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
-use Illuminate\Routing\ler as Baseler;
+use Illuminate\Routing\Controller as BaseController;
 
-class ler extends Baseler
+class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }
